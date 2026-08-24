@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐀𝐝𝐦𝐢𝐧 𝐃𝐚𝐬𝐡𝐛𝐨𝐚𝐫𝐝</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>𝐀𝐝𝐦𝐢𝐧 𝐃𝐚𝐬𝐡𝐛𝐨𝐚𝐫𝐝👾</h2>
+        <p>
+            👉𝐕𝐢𝐞𝐰 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐛𝐮𝐬𝐞𝐬 𝐚𝐧𝐝 𝐬𝐞𝐚𝐭 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 👈
+        </p>
+        <table>
+            <tr>
+                <th>𝐁𝐮𝐬 𝐍𝐎</th>
+                <th>𝐑𝐨𝐮𝐭𝐞</th>
+                <th>𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐬𝐞𝐚𝐭𝐬 😁</th>
+            </tr>
+            {% for bus in buses %}
+            <tr>
+                <td>{{ bus[0] }}</td>
+                <td>{{ bus[1] }}</td>
+                <td>{{ bus[2] }}</td>
+            </tr>
+            {% endfor %}
+</table>
+
+<br>
+<h3>Bookings</h3>
+<table>
+    <tr>
+        <th> 🆔</th>
+        <th>𝐏𝐚𝐬𝐬𝐞𝐧𝐠𝐞𝐫_𝐧𝐚𝐦𝐞</th>
+        <th>𝐃𝐞𝐩𝐚𝐫𝐭𝐮𝐫𝐞</th>
+        <th>𝐃𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧</th>
+        <th>𝐃𝐚𝐭𝐞</th>
+        <th>𝐒𝐞𝐚𝐭𝐬</th>
+    </tr>
+    {% for booking in bookings %}
+    <tr>
+        <td>{{ booking[0] }}</td>
+        <td>{{ booking[1] }}</td>
+        <td>{{ booking[2] }}</td>
+        <td>{{ booking[3] }}</td>
+        <td>{{ booking[4] }}</td>
+        <td>{{ booking[5] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+        <a href="/">Back Home</a>
+    </div>
+</body>
+</html>
+
+
+    
